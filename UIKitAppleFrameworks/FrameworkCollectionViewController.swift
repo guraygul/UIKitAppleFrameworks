@@ -18,6 +18,8 @@ class FrameworkCollectionViewController: UICollectionViewController, UICollectio
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
         collectionView.dataSource = self
         collectionView.delegate = self
         // Do any additional setup after loading the view.
