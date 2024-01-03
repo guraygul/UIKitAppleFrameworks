@@ -47,6 +47,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		101F09982B45DF020010CBE5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1062D85A2B44AB46000A2D46 /* Framework.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		101F09992B45DF240010CBE5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				101F09962B45CAF30010CBE5 /* FrameworkDetailTextCell.swift */,
+				101F09942B45B93D0010CBE5 /* FrameworkDetailHeaderView.swift */,
+				1062D85C2B44B107000A2D46 /* FrameworkCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		101F099A2B45DF3C0010CBE5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				101F09922B45B08F0010CBE5 /* FrameworkDetailViewController.swift */,
+				1062D85E2B44B1D2000A2D46 /* FrameworkCollectionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		101F099B2B45DF8D0010CBE5 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				1062D84C2B44A35F000A2D46 /* Main.storyboard */,
+				1062D8512B44A361000A2D46 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		1062D83A2B44A35F000A2D46 = {
 			isa = PBXGroup;
 			children = (
@@ -66,18 +102,14 @@
 		1062D8452B44A35F000A2D46 /* UIKitAppleFrameworks */ = {
 			isa = PBXGroup;
 			children = (
+				101F09982B45DF020010CBE5 /* Model */,
+				101F09992B45DF240010CBE5 /* View */,
+				101F099A2B45DF3C0010CBE5 /* Controller */,
+				101F099B2B45DF8D0010CBE5 /* Storyboard */,
 				1062D8462B44A35F000A2D46 /* AppDelegate.swift */,
 				1062D8482B44A35F000A2D46 /* SceneDelegate.swift */,
 				1062D84F2B44A361000A2D46 /* Assets.xcassets */,
-				1062D84C2B44A35F000A2D46 /* Main.storyboard */,
-				1062D8512B44A361000A2D46 /* LaunchScreen.storyboard */,
 				1062D8542B44A361000A2D46 /* Info.plist */,
-				1062D85A2B44AB46000A2D46 /* Framework.swift */,
-				1062D85C2B44B107000A2D46 /* FrameworkCollectionViewCell.swift */,
-				1062D85E2B44B1D2000A2D46 /* FrameworkCollectionViewController.swift */,
-				101F09942B45B93D0010CBE5 /* FrameworkDetailHeaderView.swift */,
-				101F09922B45B08F0010CBE5 /* FrameworkDetailViewController.swift */,
-				101F09962B45CAF30010CBE5 /* FrameworkDetailTextCell.swift */,
 			);
 			path = UIKitAppleFrameworks;
 			sourceTree = "<group>";

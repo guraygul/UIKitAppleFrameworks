@@ -24,13 +24,22 @@ class FrameworkDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         navigationController?.navigationBar.prefersLargeTitles = false
+        tableView.separatorStyle = .none
+        
         if let framework = framework {
             headerView.nameLabel.text = framework.name
             headerView.headerImageView.image = UIImage(named: framework.imageName)
         }
+        
         tableView.delegate = self
         tableView.dataSource = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.prefersLargeTitles = false
     }
 }
 

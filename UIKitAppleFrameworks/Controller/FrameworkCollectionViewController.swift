@@ -26,6 +26,11 @@ class FrameworkCollectionViewController: UICollectionViewController, UICollectio
         collectionView.collectionViewLayout = UICollectionViewFlowLayout()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
     // MARK: UICollectionViewDataSource
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
