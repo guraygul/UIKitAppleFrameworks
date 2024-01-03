@@ -9,12 +9,17 @@ import UIKit
 
 class FrameworkDetailViewController: UIViewController {
 
-    @IBOutlet var frameworkImageView: UIImageView!
+    var framework: Framework?
     
-    var frameworkImageName = ""
+    @IBOutlet var tableView: UITableView!
+    @IBOutlet var headerView: FrameworkDetailHeaderView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        frameworkImageView.image = UIImage(named: frameworkImageName)
+        navigationController?.navigationBar.prefersLargeTitles = false
+        if let framework = framework {
+                    headerView.nameLabel.text = framework.name
+                    headerView.headerImageView.image = UIImage(named: framework.imageName)
+                }
     }
 }

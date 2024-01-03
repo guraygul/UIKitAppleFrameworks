@@ -67,9 +67,8 @@ class FrameworkCollectionViewController: UICollectionViewController, UICollectio
         if segue.identifier == "showFrameworkDetail" {
             if let indexPath = collectionView.indexPathsForSelectedItems?.first {
                 let destinationController = segue.destination as! FrameworkDetailViewController
-                destinationController.frameworkImageName = self.frameworks[indexPath.row].imageName
+                destinationController.framework = self.frameworks[indexPath.row]
             }
         }
     }
-    
 }

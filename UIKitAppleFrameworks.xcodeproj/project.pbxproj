@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		101F09932B45B08F0010CBE5 /* FrameworkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101F09922B45B08F0010CBE5 /* FrameworkDetailViewController.swift */; };
+		101F09952B45B93D0010CBE5 /* FrameworkDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101F09942B45B93D0010CBE5 /* FrameworkDetailHeaderView.swift */; };
 		1062D8472B44A35F000A2D46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1062D8462B44A35F000A2D46 /* AppDelegate.swift */; };
 		1062D8492B44A35F000A2D46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1062D8482B44A35F000A2D46 /* SceneDelegate.swift */; };
 		1062D84E2B44A35F000A2D46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1062D84C2B44A35F000A2D46 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		101F09922B45B08F0010CBE5 /* FrameworkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailViewController.swift; sourceTree = "<group>"; };
+		101F09942B45B93D0010CBE5 /* FrameworkDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailHeaderView.swift; sourceTree = "<group>"; };
 		1062D8432B44A35F000A2D46 /* UIKitAppleFrameworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitAppleFrameworks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1062D8462B44A35F000A2D46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1062D8482B44A35F000A2D46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				1062D85A2B44AB46000A2D46 /* Framework.swift */,
 				1062D85C2B44B107000A2D46 /* FrameworkCollectionViewCell.swift */,
 				1062D85E2B44B1D2000A2D46 /* FrameworkCollectionViewController.swift */,
+				101F09942B45B93D0010CBE5 /* FrameworkDetailHeaderView.swift */,
 				101F09922B45B08F0010CBE5 /* FrameworkDetailViewController.swift */,
 			);
 			path = UIKitAppleFrameworks;
@@ -149,6 +152,7 @@
 			files = (
 				1062D85D2B44B107000A2D46 /* FrameworkCollectionViewCell.swift in Sources */,
 				1062D85F2B44B1D2000A2D46 /* FrameworkCollectionViewController.swift in Sources */,
+				101F09952B45B93D0010CBE5 /* FrameworkDetailHeaderView.swift in Sources */,
 				1062D85B2B44AB46000A2D46 /* Framework.swift in Sources */,
 				1062D8472B44A35F000A2D46 /* AppDelegate.swift in Sources */,
 				101F09932B45B08F0010CBE5 /* FrameworkDetailViewController.swift in Sources */,
