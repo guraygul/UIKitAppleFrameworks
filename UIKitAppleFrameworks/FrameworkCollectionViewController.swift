@@ -53,15 +53,23 @@ class FrameworkCollectionViewController: UICollectionViewController, UICollectio
         return CGSize(width: widthPerItem, height: widthPerItem)
     }
     
-    // 3
     func collectionView(
         _ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
             return sectionInsets
         }
     
-    // 4
     func collectionView(
         _ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
             return sectionInsets.left
         }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showFrameworkDetail" {
+            if let indexPath = collectionView.indexPathsForSelectedItems?.first {
+                let destinationController = segue.destination as! FrameworkDetailViewController
+                destinationController.frameworkImageName = self.frameworks[indexPath.row].imageName
+            }
+        }
+    }
+    
 }
